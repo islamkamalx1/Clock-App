@@ -1,0 +1,143 @@
+html {
+    font-family: 'helvetica neue';
+    text-align: center;
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    font-size: 2rem;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+    background-color: #1f3151f0;
+}
+
+.clock {
+    width: 30rem;
+    height: 30rem;
+    border: 20px solid white;
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    padding: 2rem;
+    box-shadow:
+        0 0 0 4px rgba(0, 0, 0, 0.1),
+        inset 0 0 0 3px #EFEFEF,
+        inset 0 0 10px black,
+        0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+}
+
+.hand {
+    width: 120px;
+    height: 6px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all .05;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.hour-hand {
+    background-color: rgb(63, 124, 193);
+    width: 25%;
+    left: 25%;
+}
+
+.min-hand {
+    background-color: rgb(2, 16, 32);
+    width: 40%;
+    left: 11%;
+}
+
+.second-hand {
+    height: 2px;
+    background-color: rgb(175, 18, 18);
+}
+
+.clock ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+.clock ul li {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.clock ul li:nth-child(1) {
+    right: 22%;
+    top: 9.5%;
+}
+
+.clock ul li:nth-child(2) {
+    right: 8%;
+    top: 25%;
+}
+
+.clock ul li:nth-child(3) {
+    right: 2%;
+    top: calc(50% - 10px);
+}
+
+.clock ul li:nth-child(4) {
+    right: 8%;
+    top: 69%;
+}
+
+.clock ul li:nth-child(5) {
+    right: 22%;
+    top: 83%;
+}
+
+.clock ul li:nth-child(6) {
+    right: calc(50% - 10px);
+    top: calc(99% - 30px);
+}
+
+.clock ul li:nth-child(7) {
+    left: 22%;
+    top: 83%;
+}
+
+.clock ul li:nth-child(8) {
+    left: 8%;
+    top: 69%;
+}
+
+.clock ul li:nth-child(9) {
+    left: 2%;
+    top: calc(50% - 10px);
+}
+
+.clock ul li:nth-child(10) {
+    left: 8%;
+    top: 25%;
+}
+
+.clock ul li:nth-child(11) {
+    left: 22.5%;
+    top: 9%;
+}
+
+.clock ul li:nth-child(12) {
+    right: calc(50% - 10px);
+    top: 3%;
+}
